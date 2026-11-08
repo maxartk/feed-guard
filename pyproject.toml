@@ -1,0 +1,17 @@
+[project]
+name = "feed-guard"
+version = "0.1.0"
+description = "Supplier product feed sanity checks before e-shop import"
+requires-python = ">=3.9"
+authors = [{ name = "Maksym Kovalevskyi" }]
+license = { text = "MIT" }
+
+[project.scripts]
+feed-guard = "feed_guard.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
